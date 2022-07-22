@@ -1,0 +1,12 @@
+Acme\Disbursement\Domain\Service\DisbursementStrategyManager:
+  class: Acme\Disbursement\Domain\Service\DisbursementStrategyManager
+  arguments:
+    - "#disbursement_strategy_adapter"
+
+Acme\Disbursement\Domain\Service\DisbursementStrategyAdapter\InterbankDisbursementStrategyAdapter:
+  class: Acme\Disbursement\Domain\Service\DisbursementStrategyAdapter\InterbankDisbursementStrategyAdapter
+  tag: disbursement_strategy_adapter
+
+Acme\Disbursement\Domain\Service\DisbursementStrategyAdapter\RTGSDisbursementStrategyAdapter:
+  class: Acme\Disbursement\Domain\Service\DisbursementStrategyAdapter\RTGSDisbursementStrategyAdapter
+  tag: disbursement_strategy_adapter
